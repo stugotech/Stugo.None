@@ -5,8 +5,9 @@ namespace Stugo
     public struct None
     {
         public static readonly None Value = new None();
+#if NET45
         public static readonly Task VoidTask = Task.FromResult(Value);
-
+#endif
 
         public override bool Equals(object obj)
         {

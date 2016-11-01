@@ -4,7 +4,12 @@ environment:
 
 version: $(VERSION_NUMBER).{build}
 
-configuration: net40
+matrix:
+  fast_finish: true
+
+configuration: 
+  - net40
+  - net45
 
 before_build:
   - cmd: nuget restore
@@ -14,7 +19,6 @@ build:
   publish_nuget: true
   publish_nuget_symbols: true
   verbosity: minimal
-      
 
 assembly_info:
   patch: true
