@@ -1,4 +1,5 @@
 environment:
+  PROJECT_NAME: Stugo.None
   VERSION_NUMBER: 1.1.0
   VERSION_PRE_TAG: 
 
@@ -7,18 +8,19 @@ version: $(VERSION_NUMBER).{build}
 matrix:
   fast_finish: true
 
-configuration: 
-  - net40
-  - net45
-
 before_build:
   - cmd: nuget restore
 
-build:
-  parallel: true
-  publish_nuget: true
-  publish_nuget_symbols: true
-  verbosity: minimal
+build_script:
+  - cmd: |
+      msbuild /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll" /p:Configuration=net40 /m
+      msbuild /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll" /p:Configuration=net45 /m
+      rmdir /S /Q %PROJECT_NAME%\bin\nupkg
+      mkdir %PROJECT_NAME%\bin\nupkg
+      nuget pack %PROJECT_NAME%\%PROJECT_NAME%.nuspec -OutputDirectory %PROJECT_NAME%\bin\nupkg\ /symbols -Version "%APPVEYOR_BUILD_VERSION%"
+
+artifacts:
+  - path: %(PROJECT_NAME)\bin\nupkg\*.nupkg
 
 assembly_info:
   patch: true
