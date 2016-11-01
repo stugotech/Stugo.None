@@ -1,0 +1,28 @@
+environment:
+  VERSION_NUMBER: 1.1.0
+  VERSION_PRE_TAG: 
+
+version: $(VERSION_NUMBER).{build}
+
+configuration: net40
+
+before_build:
+  - cmd: nuget restore
+
+build:
+  parallel: true
+  publish_nuget: true
+  publish_nuget_symbols: true
+  verbosity: minimal
+      
+
+assembly_info:
+  patch: true
+  file: VersionInfo.cs
+  assembly_version: '{version}'
+  assembly_file_version: '{version}'
+  assembly_informational_version: '$(VERSION_NUMBER)$(VERSION_PRE_TAG)'
+
+nuget:
+  account_feed: true
+  project_feed: true

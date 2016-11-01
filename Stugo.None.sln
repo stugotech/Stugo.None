@@ -4,25 +4,11 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stugo.None", "Stugo.None\Stugo.None.csproj", "{F277D5B8-9410-4651-8749-B65E3B764FBD}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{3ACAE481-EAC1-4411-8A0A-142195959759}"
-	ProjectSection(SolutionItems) = preProject
-		tools\GitVersion.targets = tools\GitVersion.targets
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuGet", "NuGet", "{5524B8D5-D1F5-4D80-9AFB-D67AEA932560}"
-	ProjectSection(SolutionItems) = preProject
-		tools\NuGet\NuGet.Config = tools\NuGet\NuGet.Config
-		tools\NuGet\NuGet.exe = tools\NuGet\NuGet.exe
-		tools\NuGet\NuGet.targets = tools\NuGet\NuGet.targets
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E8836CBA-9FB9-4EAB-909B-0723C14F361A}"
 	ProjectSection(SolutionItems) = preProject
 		.gitattributes = .gitattributes
 		.gitignore = .gitignore
-		build.cmd = build.cmd
-		publish.cmd = publish.cmd
-		release.cmd = release.cmd
+		appveyor.yml = appveyor.yml
 	EndProjectSection
 EndProject
 Global
@@ -38,8 +24,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{5524B8D5-D1F5-4D80-9AFB-D67AEA932560} = {3ACAE481-EAC1-4411-8A0A-142195959759}
 	EndGlobalSection
 EndGlobal
