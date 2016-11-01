@@ -20,7 +20,7 @@ build_script:
       nuget pack %PROJECT_NAME%\%PROJECT_NAME%.nuspec -OutputDirectory %PROJECT_NAME%\bin\nupkg\ /symbols -Version "%APPVEYOR_BUILD_VERSION%"
 
 artifacts:
-  - path: %(PROJECT_NAME)\bin\nupkg\*.nupkg
+  - path: '%(PROJECT_NAME)\bin\nupkg\*.nupkg''
 
 assembly_info:
   patch: true
