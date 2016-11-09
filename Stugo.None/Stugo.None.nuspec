@@ -9,7 +9,7 @@
     <copyright>Copyright (c) Stugo Ltd 2016</copyright>
   </metadata>
   <files>
-    <file src="bin\net40\*.*" exclude="*.nuspec" target="lib\net40" />
-    <file src="bin\net45\*.*" exclude="*.nuspec" target="lib\net45" />
+    <file src="bin\net40\Stugo.None.dll" exclude="*.nuspec" target="lib\net40" />
+    <file src="bin\net45\Stugo.None.dll" exclude="*.nuspec" target="lib\net45" />
   </files>
 </package>
