@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<package >
+<package>
   <metadata>
     <id>Stugo.None</id>
     <version>$version$</version>
@@ -9,9 +9,9 @@
     <copyright>Copyright (c) Stugo Ltd 2016</copyright>
   </metadata>
   <files>
-    <file src="bin\net40\Stugo.None.dll" exclude="*.nuspec" target="lib\net40" />
-    <file src="bin\net40\Stugo.None.pdb" exclude="*.nuspec" target="lib\net40" />
-    <file src="bin\net45\Stugo.None.dll" exclude="*.nuspec" target="lib\net45" />
-    <file src="bin\net45\Stugo.None.pdb" exclude="*.nuspec" target="lib\net45" />
+    <file src="bin\net40\Stugo.None.dll" target="lib\net40" />
+    <file src="bin\net40\Stugo.None.pdb" target="lib\net40" />
+    <file src="bin\net45\Stugo.None.dll" target="lib\net45" />
+    <file src="bin\net45\Stugo.None.pdb" target="lib\net45" />
   </files>
 </package>

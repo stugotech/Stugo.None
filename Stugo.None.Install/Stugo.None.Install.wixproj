@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>3.10</ProductVersion>
+    <ProjectGuid>cd73bf94-5cd7-4b79-b529-97a514be8469</ProjectGuid>
+    <SchemaVersion>2.0</SchemaVersion>
+    <OutputName>Stugo.None</OutputName>
+    <OutputType>Library</OutputType>
+    <WixTargetsPath Condition=" '$(WixTargetsPath)' == '' AND '$(MSBuildExtensionsPath32)' != '' ">$(MSBuildExtensionsPath32)\Microsoft\WiX\v3.x\Wix.targets</WixTargetsPath>
+    <WixTargetsPath Condition=" '$(WixTargetsPath)' == '' ">$(MSBuildExtensionsPath)\Microsoft\WiX\v3.x\Wix.targets</WixTargetsPath>
+    <Name>Stugo.None.Install</Name>
+    <LibBindFiles>True</LibBindFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'net45|x86'">
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'net40|x86'">
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Stugo.None\Stugo.None.csproj">
+      <Name>Stugo.None</Name>
+      <Project>{f277d5b8-9410-4651-8749-b65e3b764fbd}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Stugo.None.Install.nuspec" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Fragment.wxs" />
+  </ItemGroup>
+  <Import Project="$(WixTargetsPath)" />
+  <!--
+	To modify your build process, add your task inside one of the targets below and uncomment it.
+	Other similar extension points exist, see Wix.targets.
+	<Target Name="BeforeBuild">
+	</Target>
+	<Target Name="AfterBuild">
+	</Target>
+	-->
+</Project>
