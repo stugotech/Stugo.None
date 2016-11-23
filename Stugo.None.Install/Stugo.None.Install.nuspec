@@ -9,7 +9,7 @@
     <copyright>Copyright (c) Stugo Ltd 2016</copyright>
   </metadata>
   <files>
-    <file src="bin\net40\Stugo.None.wixlib" target="lib\net40" />
-    <file src="bin\net45\Stugo.None.wixlib" target="lib\net45" />
+    <file src="bin\net40\Stugo.None.wixlib" target="Stugo.None.net40.wixlib" />
+    <file src="bin\net45\Stugo.None.wixlib" target="Stugo.None.net45.wixlib" />
   </files>
 </package>
