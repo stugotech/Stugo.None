@@ -11,5 +11,6 @@
   <files>
     <file src="bin\net40\Stugo.None.wixlib" target="Stugo.None.net40.wixlib" />
     <file src="bin\net45\Stugo.None.wixlib" target="Stugo.None.net45.wixlib" />
+    <file src="Stugo.None.Install.targets" target="build\" />
   </files>
 </package>
