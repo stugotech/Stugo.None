@@ -4,7 +4,7 @@
     <TargetFrameworkMoniker Condition="'$(TargetFrameworkMoniker)' == ''">net45</TargetFrameworkMoniker>
   </PropertyGroup>
   <ItemGroup>
-    <WixLibrary Include="Stugo.None.net45">
+    <WixLibrary Include="Stugo.None.$(TargetFrameworkMoniker)">
       <HintPath>..\packages\Stugo.None.Install.1.1.1.12\Stugo.None.$(TargetFrameworkMoniker).wixlib</HintPath>
       <Name>Stugo.None.$(TargetFrameworkMoniker)</Name>
     </WixLibrary>
