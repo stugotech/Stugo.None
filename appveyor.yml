@@ -21,7 +21,7 @@ build_script:
       mkdir %PROJECT_NAME%\bin\nupkg
       mkdir %PROJECT_NAME%.Install\bin\nupkg
       nuget pack %PROJECT_NAME%\%PROJECT_NAME%.nuspec -OutputDirectory %PROJECT_NAME%\bin\nupkg\ -Version "%FULL_VERSION%"
-      nuget pack %PROJECT_NAME%.Install\%PROJECT_NAME%.Install.nuspec -OutputDirectory %PROJECT_NAME%\bin\nupkg\ -Version "%FULL_VERSION%"
+      nuget pack %PROJECT_NAME%.Install\%PROJECT_NAME%.Install.nuspec -OutputDirectory %PROJECT_NAME%.Install\bin\nupkg\ -Version "%FULL_VERSION%"
 
 artifacts:
   - path: $(PROJECT_NAME)\bin\nupkg\*.nupkg
