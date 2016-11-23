@@ -1,0 +1,15 @@
+﻿<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>Stugo.None.Install</id>
+    <version>$version$</version>
+    <title>Stugo.None.Install</title>
+    <authors>Stugo Ltd</authors>
+    <description>Represents no value</description>
+    <copyright>Copyright (c) Stugo Ltd 2016</copyright>
+  </metadata>
+  <files>
+    <file src="bin\net40\Stugo.None.wixlib" target="lib\net40" />
+    <file src="bin\net45\Stugo.None.wixlib" target="lib\net45" />
+  </files>
+</package>

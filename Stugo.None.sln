@@ -11,19 +11,42 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		appveyor.yml = appveyor.yml
 	EndProjectSection
 EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "Stugo.None.Install", "Stugo.None.Install\Stugo.None.Install.wixproj", "{CD73BF94-5CD7-4B79-B529-97A514BE8469}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
 		net40|Any CPU = net40|Any CPU
+		net40|x86 = net40|x86
 		net45|Any CPU = net45|Any CPU
+		net45|x86 = net45|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{F277D5B8-9410-4651-8749-B65E3B764FBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F277D5B8-9410-4651-8749-B65E3B764FBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F277D5B8-9410-4651-8749-B65E3B764FBD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F277D5B8-9410-4651-8749-B65E3B764FBD}.Debug|x86.Build.0 = Debug|Any CPU
 		{F277D5B8-9410-4651-8749-B65E3B764FBD}.net40|Any CPU.ActiveCfg = net40|Any CPU
 		{F277D5B8-9410-4651-8749-B65E3B764FBD}.net40|Any CPU.Build.0 = net40|Any CPU
+		{F277D5B8-9410-4651-8749-B65E3B764FBD}.net40|x86.ActiveCfg = net40|Any CPU
+		{F277D5B8-9410-4651-8749-B65E3B764FBD}.net40|x86.Build.0 = net40|Any CPU
 		{F277D5B8-9410-4651-8749-B65E3B764FBD}.net45|Any CPU.ActiveCfg = net45|Any CPU
 		{F277D5B8-9410-4651-8749-B65E3B764FBD}.net45|Any CPU.Build.0 = net45|Any CPU
+		{F277D5B8-9410-4651-8749-B65E3B764FBD}.net45|x86.ActiveCfg = net45|Any CPU
+		{F277D5B8-9410-4651-8749-B65E3B764FBD}.net45|x86.Build.0 = net45|Any CPU
+		{CD73BF94-5CD7-4B79-B529-97A514BE8469}.Debug|Any CPU.ActiveCfg = net45|x86
+		{CD73BF94-5CD7-4B79-B529-97A514BE8469}.Debug|Any CPU.Build.0 = net45|x86
+		{CD73BF94-5CD7-4B79-B529-97A514BE8469}.Debug|x86.ActiveCfg = net40|x86
+		{CD73BF94-5CD7-4B79-B529-97A514BE8469}.Debug|x86.Build.0 = net40|x86
+		{CD73BF94-5CD7-4B79-B529-97A514BE8469}.net40|Any CPU.ActiveCfg = net40|x86
+		{CD73BF94-5CD7-4B79-B529-97A514BE8469}.net40|Any CPU.Build.0 = net40|x86
+		{CD73BF94-5CD7-4B79-B529-97A514BE8469}.net40|x86.ActiveCfg = net40|x86
+		{CD73BF94-5CD7-4B79-B529-97A514BE8469}.net40|x86.Build.0 = net40|x86
+		{CD73BF94-5CD7-4B79-B529-97A514BE8469}.net45|Any CPU.ActiveCfg = net45|x86
+		{CD73BF94-5CD7-4B79-B529-97A514BE8469}.net45|Any CPU.Build.0 = net45|x86
+		{CD73BF94-5CD7-4B79-B529-97A514BE8469}.net45|x86.ActiveCfg = net45|x86
+		{CD73BF94-5CD7-4B79-B529-97A514BE8469}.net45|x86.Build.0 = net45|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
