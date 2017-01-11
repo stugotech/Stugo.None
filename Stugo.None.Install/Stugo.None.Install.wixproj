@@ -33,6 +33,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Stugo.None.Install.nuspec" />
+    <Content Include="Stugo.None.Install.targets" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Fragment.wxs" />
